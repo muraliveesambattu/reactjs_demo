@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 300px;
+            height: 300px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="changeHTMLContent()">Change The Content</button>
+    <h2>Welcome to Javascript Session 1</h2>
+    <button onclick="changeImageAddress()">Change Image Address</button>
+  <img src="https://media.istockphoto.com/id/998390080/photo/lavender-field-at-sunset.jpg?s=612x612&w=0&k=20&c=-4KuH9Rho29rxPSJZIZoKNL5XGBp7N_MaXD-aBxW_E8=" alt="">
+
+  <script>
+    // for(i=0;i<100;i++){
+    //     var myImg = document.createElement("img");
+    //     myImg.src = "https://media.istockphoto.com/id/998390080/photo/lavender-field-at-sunset.jpg?s=612x612&w=0&k=20&c=-4KuH9Rho29rxPSJZIZoKNL5XGBp7N_MaXD-aBxW_E8=";
+    //     document.querySelector("body").appendChild(myImg)
+    // }
+
+    function changeImageAddress(){
+        var image = document.querySelector("img")
+        image.setAttribute("src","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7CBJorho6YGePkRtqPY5gj9l2RwFyfdqGTNlddvpwwLiN5b6RyrkbjMJo&s=10")
+        image.style.width = "600px"
+    }
+
+    function changeHTMLContent(){
+        document.querySelector("h2").innerHTML = "I Am Changing ... by JS"
+    }
+  </script>
+
+</body>
+</html>
