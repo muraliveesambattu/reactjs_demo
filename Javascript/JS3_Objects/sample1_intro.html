@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Property Name and Property Value 
+        // key and value pair
+        var person = {
+            fname: "Murali",
+            lname: "Krishna",
+            age: 40,
+            info: null,
+            all: undefined,
+            fullName: function () {
+                return this.fname + " " + this.lname;
+            },
+            address: {
+                city: "Hyderabad",
+                state: "Telangana",
+                country: "India"
+            }
+        };
+        person["email"] = "murali@gmail.com"; // Adding a property with [] notation 
+        person.mobile = 9663856625;// Adding a property with . notation
+
+        console.log(person.lname);
+        console.log(person["email"]);
+
+        delete person.address
+        
+        console.log(person);
+    </script>
+</body>
+
+</html>
