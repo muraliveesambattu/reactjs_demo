@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const employee = {
+            id: 101,
+            name: "Murali",
+            age: 30,
+            email: "murali@example.com",
+            department: "IT",
+            designation: "Frontend Developer",
+            experience: 8,
+            salary: 85000,
+            location: "Bangalore",
+            status: "Active"
+        };
+
+        // document.writeln(employee.id);
+        // document.writeln("<br>");
+        // document.writeln(employee.name);
+        // document.writeln("<br>");
+        // document.writeln(employee.age);
+        // document.writeln("<br>");
+        // document.writeln(employee.email);
+        // document.writeln("<br>");
+        // document.writeln(employee.department);
+        // document.writeln("<br>");
+        // document.writeln(employee.designation);
+        // document.writeln("<br>");
+        // document.writeln(employee.experience);
+        // document.writeln("<br>");
+        // document.writeln(employee.salary);
+        // document.writeln("<br>");
+        // document.writeln(employee.location);
+        // document.writeln("<br>");
+        // document.writeln(employee.status);
+
+        for (a in employee) {
+            document.writeln(employee[a] + "<br/>")
+        }
+
+    </script>
+</body>
+
+</html>

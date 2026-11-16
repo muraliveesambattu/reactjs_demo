@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var students = ["Ram", "Ravi", "Sam", "Sundhar", "Kiran", "Kumar","Ashok"]
+
+        // ForEach method is only for Iteration 
+        // students.forEach(function (student,index,arr){
+        //     console.log(student,index,arr);
+        // })
+
+
+       var newStudents =  students.map(function (student,i){
+            return student+"- VMR"
+        })
+
+        console.log(newStudents);
+
+    </script>
+</body>
+
+</html>

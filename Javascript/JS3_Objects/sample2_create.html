@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // literal method of Creating Object 
+        var person = {
+            fname: "Ram",
+            lname: "krishna"
+        };
+
+        console.log(person);
+        // Object Constructor method of Creating Object
+        var person1 = new Object()
+        person1.fname = "Murali";
+        console.log(person1);
+
+        function Student(fname, lname) {
+            this.fname = fname;
+            this.lname = lname;
+        }
+        var student1 = new Student("Ravi", "Kishan");
+
+        console.log(student1);
+
+        class Product {
+            constructor(name, description, price) {
+                this.name = name;
+                this.description = description;
+                this.price = price;
+            }
+        }
+
+        var product1 = new Product("Laptop", "256GB", 50000);
+        console.log(product1);
+
+
+        
+    </script>
+</body>
+
+</html>
