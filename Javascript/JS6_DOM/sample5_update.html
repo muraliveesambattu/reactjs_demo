@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       <table border="1">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+    <script>
+          var users = [
+            {
+                fname: "ram",
+                lname: "krishna"
+            },
+            {
+                fname: "Ravi",
+                lname: "Kumar"
+            },
+            {
+                fname: "sam",
+                lname: "Kumar"
+            }
+        ]
+
+            function displayUsers (){
+                users.forEach(function (user){
+                    var myTr = document.createElement("tr");
+                    myTr.innerHTML = `<td>${user.fname}</td><td>${user.lname}</td>`
+                    document.querySelector("tbody").appendChild(myTr)
+                })
+            }
+
+            displayUsers ();
+            document.querySelector("tbody").innerHTML = "";
+            users[1] = {
+                fname: "Ravi",
+                lname: "Kumar Updated"  
+            }
+
+            displayUsers ()
+    </script>
+</body>
+</html>

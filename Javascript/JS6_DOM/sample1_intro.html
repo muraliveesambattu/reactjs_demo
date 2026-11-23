@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2 id="myHeading">Welcome to DOM Topic !!</h2>
+    <h2>Welcome to 2nd Heading !!</h2>
+
+    <ul>
+        <li>Item 1</li>
+        <li class="mylist">Item 2</li>
+        <li>Item 3</li>
+        <li class="mylist">Item 4</li>
+        <li class="mylist">Item 5</li>
+    </ul>
+
+    <form action="">
+        <input type="text" name="info" id="">
+        <input type="text" name="info" id="">
+        <input type="text" name="info" id="">
+    </form>
+    <script>
+        // document.querySelector("h2") - returns single element 
+        // document.getElementById("myHeading") - returns single element
+
+
+        // document.querySelectorAll("h2") - returns multiple elements
+        // document.getElementsByTagName("h2") - returns multiple elements
+        // document.getElementsByName("info") - returns multiple elements 
+        // document.getElementsByClassName("mylist") - returns multiple elements 
+
+        var listItems = document.querySelectorAll("li")
+        for (i = 0; i < listItems.length; i++) {
+            listItems[i].style.color = "red"
+        }
+    </script>
+</body>
+
+</html>

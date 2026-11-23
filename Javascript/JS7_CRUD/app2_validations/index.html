@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #updateUserBtn{
+            display: none;
+        }
+        span{
+            color: red;
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <form>
+        <label for="">First Name :</label>
+        <input type="text" id="firstName" onkeyup="validateForm()"> <br>
+        <span id="firstNameError">First Name Should be 6 characters .</span>
+        <label for="">Last Name :</label>
+        <input type="text" id="lastName" onkeyup="validateForm()"> <br>
+        <span id="lastNameError">Last Name Should be 6 characters .</span>
+
+        <label for="">Email :</label>
+        <input type="email" id="email" onkeyup="validateForm()"><br>
+        <span id="emailError">Please enter Valid Email .</span>
+
+        <label for="">Mobile</label>
+        <input type="text" id="mobile" onkeyup="validateForm()"><br>
+        <span id="mobileError">Please enter Valid Mobile Number .</span>
+
+        <button type="button" onclick="addUser()" id="addUserBtn" disabled>Add User </button>
+        <button type="button" onclick="updateUser()" id="updateUserBtn">Update User </button>
+    </form>
+    <script src="app2.js"></script>
+</body>
+</html>
